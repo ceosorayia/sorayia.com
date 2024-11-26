@@ -1,0 +1,75 @@
+.featureCard {
+  width: 415px;
+  height: 192px;
+  padding: 46px;
+  border-radius: 10px;
+  border: 1px solid #18181b;
+  background: rgba(234, 234, 234, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #18181b;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: left;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.bulletPoint {
+  display: block;
+  margin-right: 4px;
+  font-size: 24px;
+  margin-left: -16px;
+  height: 0px;
+}
+
+.title {
+  display: inline;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+@media (max-width: 1100px) {
+  .featureCard {
+    width: 350px; 
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 14px; /* Adjust text font size */
+    line-height: 24px; /* Slightly reduce line height */
+  }
+
+  .bulletPoint {
+    font-size: 20px; /* Adjust bullet point size */
+    margin-left: -12px; /* Reduce left margin */
+  }
+
+  .title {
+    font-size: 14px; /* Reduce title font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .featureCard {
+    width: 380; /* Reduce width */
+  }
+
+  .text {
+    font-size: 13px; /* Smaller font size for better readability */
+    line-height: 22px;
+  }
+
+  .bulletPoint {
+    font-size: 18px; /* Further reduce bullet point size */
+  }
+
+  .title {
+    font-size: 13px; /* Match text size */
+  }
+}

@@ -1,0 +1,172 @@
+.container {
+  background-color: #fff;
+  width: 100%;
+  padding: 16rem 5% 16rem 5%;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p {
+  max-width: 516px;
+  font-size: 19px;
+}
+
+.header {
+  font-size: 40px;
+  font-weight: 400;
+  max-width: 400px;
+  min-width: 400px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 40px 40px 14rem 40px;
+}
+
+.faq {
+  font-weight: 400;
+  margin: 60px;
+}
+
+.faqContainer {
+  width: 70%;
+  min-height: fit-content;
+}
+
+.faqItem {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.questionRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.answerContainer {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.4s ease, opacity 0.4s ease;
+}
+
+.answerContainer.show {
+  opacity: 1;
+}
+
+.answer {
+  font-size: 1rem;
+  margin-top: 10px;
+  max-width: 1000px;
+}
+
+@media (max-width: 1500px) {
+  .row,
+  .faqContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 8rem 4%;
+    gap: 22px;
+    align-items: flex-start;
+  }
+
+  .p {
+    max-width: auto;
+  }
+
+  .header {
+    max-width: auto;
+    min-width: auto;
+  }
+
+  .faqContainer {
+    margin: 0 auto;
+  }
+
+  .p {
+    font-size: 18px;
+    max-width: 80%;
+  }
+
+  .header {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+  }
+
+  .row,
+  .faqContainer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 6rem 3%;
+  }
+
+  .p {
+    font-size: 17px;
+  }
+
+  .header {
+    font-size: 32px;
+  }
+
+  .row,
+  .faqContainer {
+    width: 90%;
+  }
+
+  .faq {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 4rem 2%;
+  }
+
+  .p {
+    font-size: 16px;
+  }
+
+  .header {
+    font-size: 28px;
+  }
+
+  .question {
+    margin-right: 12px;
+  }
+
+  .faqContainer {
+    min-height: 560px;
+  }
+}

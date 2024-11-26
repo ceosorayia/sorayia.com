@@ -1,0 +1,44 @@
+/* BrandsContainer.module.css */
+.brandsContainer {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  transform: translate3d(0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+}
+
+.brandsInner {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  will-change: transform;
+}
+
+.brandContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brandText {
+  font-size: 40px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.elevenLab{
+  margin-right: 120px;
+}
+
+.webgl {
+  margin-left: 50px;
+  margin-right: -15px;
+}
+
+
+.unity{
+  margin: 0 -26px;
+}
