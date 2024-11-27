@@ -1,13 +1,13 @@
 .howItWorks {
   color: #820070;
-  padding: 14rem 0; /* Réduit l'espacement vertical pour monter légèrement */
+  padding: 11rem 0; 
   border-radius: 8px;
-  width: 85%; /* Réduit légèrement la largeur */
+  width: 85%; 
   max-width: 1950px;
-  margin: -2rem auto; /* Monte la section d'un cran en réduisant la marge */
+  margin: -2rem auto; 
   display: flex;
-  font-size: 0.95rem; /* Réduit légèrement la taille de la police */
-  letter-spacing: 0.5px; /* Améliore la lisibilité en ajustant l'espacement entre lettres */
+  font-size: 0.90rem; 
+  letter-spacing: 0.7px; 
 }
 
 .col {
