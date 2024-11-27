@@ -10,8 +10,6 @@
   letter-spacing: 0.5px; /* Améliore la lisibilité en ajustant l'espacement entre lettres */
 }
 
-}
-
 .col {
   flex: 1;
   width: 100%;
