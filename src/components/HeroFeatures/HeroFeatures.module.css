@@ -39,15 +39,15 @@
   color: #18181b;
 }
 
-/* Suppression des bullet points pour les listes */
+
 .featuresGrid ul {
-  list-style-type: none; /* Supprime les points */
-  padding: 0; /* Retire les espacements à gauche */
-  margin: 0; /* Retire les marges par défaut */
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
 }
 
 .featuresGrid li {
-  text-align: left; /* Si tu veux aligner le texte à gauche */
+  text-align: left; 
 }
 
 @media (max-width: 1100px) {
