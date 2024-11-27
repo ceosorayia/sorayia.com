@@ -19,13 +19,6 @@
   font-weight: 400;
 }
 
-.bulletPoint {
-  display: block;
-  margin-right: 4px;
-  font-size: 24px;
-  margin-left: -16px;
-  height: 0px;
-}
 
 .title {
   display: inline;
@@ -45,10 +38,7 @@
     line-height: 24px; /* Slightly reduce line height */
   }
 
-  .bulletPoint {
-    font-size: 20px; /* Adjust bullet point size */
-    margin-left: -12px; /* Reduce left margin */
-  }
+ 
 
   .title {
     font-size: 14px; /* Reduce title font size */
@@ -65,9 +55,7 @@
     line-height: 22px;
   }
 
-  .bulletPoint {
-    font-size: 18px; /* Further reduce bullet point size */
-  }
+  
 
   .title {
     font-size: 13px; /* Match text size */
