@@ -9,7 +9,7 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #71717b;
-  font-weight: 510;
+  font-weight: 450;
 }
 
 .subHeading {
@@ -19,14 +19,14 @@
   color: #141313;
   max-width: 770px;
   margin: 28px auto 43px auto;
-  font-weight: 510;
+  font-weight: 450;
 }
 
 .description {
   font-size: 18px;
   margin-bottom: 40px;
   color: #71717b;
-  font-weight: 510;
+  font-weight: 450;
 }
 
 .featuresGrid {
@@ -37,6 +37,17 @@
   max-width: 800px;
   margin: 150px auto;
   color: #18181b;
+}
+
+/* Suppression des bullet points pour les listes */
+.featuresGrid ul {
+  list-style-type: none; /* Supprime les points */
+  padding: 0; /* Retire les espacements à gauche */
+  margin: 0; /* Retire les marges par défaut */
+}
+
+.featuresGrid li {
+  text-align: left; /* Si tu veux aligner le texte à gauche */
 }
 
 @media (max-width: 1100px) {
@@ -76,8 +87,6 @@
     gap: 30px;
     grid-template-columns: 1fr;
   }
-
-
 
   .featuresGrid {
     margin: 60px auto;
