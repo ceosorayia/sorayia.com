@@ -9,7 +9,7 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #71717b;
-  font-weight: 600;
+  font-weight: 510;
 }
 
 .subHeading {
@@ -19,14 +19,14 @@
   color: #141313;
   max-width: 770px;
   margin: 28px auto 43px auto;
-  font-weight: 600;
+  font-weight: 510;
 }
 
 .description {
   font-size: 18px;
   margin-bottom: 40px;
   color: #71717b;
-  font-weight: 600;
+  font-weight: 510;
 }
 
 .featuresGrid {
