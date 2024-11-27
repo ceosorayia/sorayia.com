@@ -11,14 +11,14 @@
 }
 
 .header {
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 0.5rem;
   color: #000;
   font-weight: 300;
 }
 
 .subheader {
-  font-size: 19px;
+  font-size: 16px;
   color: #a1a1ab;
 
   margin-bottom: 6rem;
@@ -91,7 +91,7 @@
   }
 
   .header {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .subheader {

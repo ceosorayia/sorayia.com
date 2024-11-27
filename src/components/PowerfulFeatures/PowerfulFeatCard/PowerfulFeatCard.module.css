@@ -38,9 +38,9 @@
 
 .title {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 28px;
+  font-size: 22px;
+  font-weight: 502;
+  line-height: 24px;
   margin-bottom: 0.5rem;
   color: #18181b;
 }
@@ -48,8 +48,8 @@
 .description {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 15px;
-  font-weight:450;
-  line-height: 28px;
+  font-weight: 350;
+  line-height: 24px;
   color: #a1a1aa;
 }
 
@@ -65,20 +65,18 @@
 
 @media (max-width: 440px) {
   .content {
-    padding: 1rem; 
+    padding: 1rem;
   }
 
   .title {
-    font-size: 20px; 
+    font-size: 20px;
   }
 
   .description {
-    font-size: 13px; 
+    font-size: 13px;
   }
 
   .card {
-    transform: scale(
-      0.9
-    );
+    transform: scale(0.9);
   }
 }

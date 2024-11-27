@@ -1,6 +1,6 @@
 import React from 'react';
 import { Coins } from 'lucide-react';
-import { TokenPrice } from './types/ethereum';
+import { TokenPrice } from '../types/ethereum';
 import { PriceDisplay } from './PriceDisplay';
 
 interface TokenPurchaseFormProps {
@@ -12,7 +12,7 @@ interface TokenPurchaseFormProps {
   tokenName: string;
 }
 
-export default function TokenPurchaseForm({
+export function TokenPurchaseForm({
   amount,
   price,
   onAmountChange,
@@ -24,7 +24,7 @@ export default function TokenPurchaseForm({
     <div className="space-y-6">
       <div>
         <label className="block text-sm font-medium mb-2">
-          Montant de {tokenName} à acheter
+          Amount of {tokenName} to buy
         </label>
         <div className="relative">
           <input
@@ -49,7 +49,7 @@ export default function TokenPurchaseForm({
         disabled={loading || !amount}
         className="w-full bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white font-bold py-4 px-6 rounded-xl transition duration-200 disabled:opacity-50 shadow-lg"
       >
-        {loading ? 'Transaction en cours...' : `Acheter ${tokenName}`}
+        {loading ? 'Transaction in progress...' : `Buy ${tokenName}`}
       </button>
     </div>
   );

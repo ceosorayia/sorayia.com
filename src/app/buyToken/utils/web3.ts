@@ -1,21 +1,18 @@
-import { ethers } from 'ethers';
-import { Web3Error } from '../types/ethereum';
+// utils/web3.ts
+export const handleWeb3Error = async (error: any): Promise<string> => {
+  console.error('Transaction error:', error);
 
-export async function handleWeb3Error(error: unknown): Promise<string> {
-  const web3Error = error as Web3Error;
-  
-  if (web3Error.code === 4001) {
-    return 'Transaction refusée par l\'utilisateur';
+  if (error.code === 'ACTION_REJECTED') {
+    return 'Transaction rejected by user';
   }
-  
-  if (web3Error.code === -32002) {
-    return 'Une requête de connexion est déjà en cours';
+
+  if (error.code === -32603) {
+    return 'Insufficient funds for transaction';
   }
-  
-  if (web3Error.message?.includes('insufficient funds')) {
-    return 'Fonds insuffisants pour effectuer la transaction';
+
+  if (error.data?.message) {
+    return error.data.message;
   }
-  
-  console.error('Web3 Error:', error);
-  return 'Une erreur est survenue lors de la transaction';
-}
+
+  return error.message || 'Transaction failed. Please try again.';
+};

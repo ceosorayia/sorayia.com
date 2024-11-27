@@ -35,7 +35,6 @@
 }
 
 .icon {
-  background-color: white;
   height: 24px;
   border-radius: 8px;
 }
@@ -99,20 +98,16 @@
 }
 
 .iconTelegram {
-  border-radius: 50%;
-  background-color: #fff;
+  border-radius: 0%;
   width: 24px;
   height: 24px;
   overflow: hidden;
 }
 
 .facebookIcon {
-  background-color: #fff;
   width: 24px;
   height: 24px;
   overflow: hidden;
-  margin-bottom: 2px;
-  border-radius: 10px;
 }
 
 .iconImage {

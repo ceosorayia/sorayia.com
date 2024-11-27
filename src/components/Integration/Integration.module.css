@@ -1,5 +1,5 @@
 .container {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   padding: 16rem 5% 16rem 5%;
   color: #000;
@@ -15,8 +15,8 @@
 }
 
 .header {
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 38px;
+  font-weight: 300;
   max-width: 400px;
   min-width: 400px;
 }
@@ -30,7 +30,7 @@
 }
 
 .faq {
-  font-weight: 400;
+  font-weight: 600;
   margin: 60px;
 }
 
