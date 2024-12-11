@@ -317,6 +317,7 @@ const StakingCard: React.FC<StakingCardProps> = () => {
       // Amount validation
       const minStake = await stakingContract.minStakeAmount();
       const maxStake = await stakingContract.maxStakeAmount();
+      if (!tokenContract) throw new Error('Token contract not initialized');
       const balance = await tokenContract.balanceOf(account);
       
       if (!isValidAmount(stakeAmount, balance, minStake, maxStake, TOKEN_DECIMALS)) {

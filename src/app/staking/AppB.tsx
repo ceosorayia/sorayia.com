@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { Coins } from 'lucide-react';
-import { StakingDashboard } from './components/StakingDashboard';
-import { Navigation } from './components/Navigation';
+import StakingCard from './components/StakingCard';
 
 function App() {
   const [connected, setConnected] = useState(false);
@@ -23,15 +22,8 @@ function App() {
           <p className="text-xl text-blue-200">Stake your tokens and earn rewards</p>
         </div>
 
-        <Navigation 
-          connected={connected} 
-          setConnected={setConnected}
-          currentView={view}
-          onViewChange={setView}
-        />
-
         <div className="mt-8">
-          {connected && <StakingDashboard />}
+          {connected && <StakingCard />}
         </div>
       </div>
     </div>
