@@ -1,11 +1,11 @@
 .content-container {
   padding: 3rem;
-  background-color: #000;
+  background-color: #000000;
   color: color(display-p3 1 1 1);
   font-family: Inter, sans-serif;
   max-width: 850px;
   margin: 0 auto;
-  background: #0000;
+  background: #000000;
   border-radius: 20px;
   min-height: 800px;
 }
