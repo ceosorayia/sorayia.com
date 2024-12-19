@@ -7,7 +7,7 @@ const page = () => {
       <h1 className="main-title">Staking</h1>
       <p className="main-paragraph">
         $SRA holders can now stake tokens in the{" "}
-        <a href="https://staking.sorayia.com" className="link">
+        <a href="https://www.sorayia.com/staking" className="link">
           staking portal
         </a>{" "}
         and earn 150% APY on the staked amount. Staking progress can be easily
@@ -28,7 +28,7 @@ const page = () => {
       <ol className="numbered-points">
         <li>
           Go to the staking portal at{" "}
-          <a href="https://staking.sorayia.com" className="link">
+          <a href="https://www.sorayia.com/staking" className="link">
             https://staking.sorayia.com
           </a>{" "}
           and connect your Metamask wallet.
