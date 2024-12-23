@@ -491,7 +491,17 @@ const StakingCard: React.FC<StakingCardProps> = () => {
       <div className="grid gap-6">
         {/* Lock Period Info */}
         <div className="text-center">
-          <h3 className="text-2xl font-bold text-white mb-2">Lock Period: 90 Days</h3>
+          <div className="font-medium">
+            <span className="text-white">contract: </span>
+            <a 
+              href="https://bscscan.com/address/0x037c24C4A032f2f274b87f7426c90f808A061603" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-purple-400 hover:text-purple-300 transition-colors"
+            >
+              0x037c24...A061603
+            </a>
+          </div>
           <div className="grid grid-cols-4 gap-2 max-w-sm mx-auto mb-4">
             <div className="bg-gray-700/50 rounded-lg p-2">
               <div className="text-2xl font-bold text-gray-300">{timeLeft.days}</div>
