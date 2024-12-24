@@ -95,7 +95,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="https://t.me/sorayiaofficialcommunity"
+              href="https://t.me/sorayiadotom"
               className={styles.iconTelegram}
             >
               <Image
