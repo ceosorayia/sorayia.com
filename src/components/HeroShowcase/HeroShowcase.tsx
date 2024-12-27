@@ -11,7 +11,7 @@ const HeroShowcase = () => {
         <p className={styles.text}> START to invest in $SRA</p>
         <div className={styles.buttonContainer}>
           <a 
-            href="https://www.geckoterminal.com/fr/bsc/pools/0x5a19bf181174a47c65faaeebcec1e1d17212ae19" 
+            href="https://www.geckoterminal.com/bsc/pools/0x5a19bf181174a47c65faaeebcec1e1d17212ae19" 
             target="_blank" 
             rel="noopener noreferrer"
           >
