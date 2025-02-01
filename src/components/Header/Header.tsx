@@ -17,7 +17,7 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const isDocsRoute = pathname.startsWith("/docs");
+  const isDocsRoute = pathname?.startsWith("/docs") || false;
 
   return (
     <div
