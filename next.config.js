@@ -1,11 +1,15 @@
-const nextConfig = {
-  reactStrictMode: true, // Active le mode strict de React
-  eslint: {
-    ignoreDuringBuilds: true, // Ignore les erreurs ESLint lors du build
-  },
-  images: {
-    domains: ['example.com'], // Configuration pour les images externes
+module.exports = {
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; object-src 'none';",
+          },
+        ],
+      },
+    ];
   },
 };
-
-module.exports = nextConfig;
